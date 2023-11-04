@@ -11,11 +11,19 @@
         smartWatch:T
     }
 
-    const poorDeveloper: Developer<{
+    type EmAbWatch={
         brand:string
         model:string
         display:string
-    }> ={
+    }
+    // or interface use and if we want to more than one perameter we can give it in Developer<T,X> and if no need X, give X=null
+    // type EmAbWatch {
+    //     brand:string
+    //     model:string
+    //     display:string
+    // }
+
+    const poorDeveloper: Developer<EmAbWatch> ={
         name:'sajib',
         computer:{
             brand:'asus',
